@@ -5,6 +5,8 @@
 #include "Framework/GameObject.h"
 #include <string>
 #include <iostream>
+#include "Zombie.h"
+#include "Mario.h"
 
 
 class Level{
@@ -15,6 +17,12 @@ public:
 	void handleInput(float dt);
 	void update(float dt);
 	void render();
+
+	Zombie zombie;
+	sf::Texture zombTexture;
+
+	Mario mario;
+	sf::Texture marioTexture;
 
 private:
 	// Default functions for rendering to the screen.
